@@ -5,7 +5,7 @@ N=512;
 Fs=22050;
 f0_norm = 120;
 
-caminho='/home/joao/20111/morpher/percepcao/'
+caminho='./percepcao/'
 %filename = dir([caminho '*.wav']);
 filename = dir([caminho '*.wav']);
 
@@ -83,7 +83,7 @@ ArquivoTemp3 = [ArquivoTemp '3'];
 
 
 
-command = [ '!/home/joao/20111/maurilio_tools/acoustic -i ' arquivo ' -o ' ArquivoTemp2 ' -c ' ...
+command = [ 'acoustic -i ' arquivo ' -o ' ArquivoTemp2 ' -c ' ...
                             ArquivoTemp3 ' -n 1 | grep F0 > ' ...
                             ArquivoTemp ] ;
                     

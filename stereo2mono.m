@@ -14,3 +14,35 @@ for J = 1 : Dtotal
     ArquivoBaseSaida = [ caminho_out D(J).name  ]
     wavwrite(y(:,1), fs, ArquivoBaseSaida);
 end
+
+
+caminho='/home/joao/qualy/base/mau/'
+caminho_out='/home/joao/qualy/base/mau_mono/'
+D = dir('/home/joao/qualy/base/mau/*.wav');
+
+Temp = size(D);
+Dtotal = Temp(1);
+
+
+for J = 1 : Dtotal  
+    ArquivoBase = [ caminho D(J).name  ]
+    [y,fs] = wavread(ArquivoBase);
+    ArquivoBaseSaida = [ caminho_out D(J).name  ]
+    wavwrite(y(:,1), fs, ArquivoBaseSaida);
+end
+
+
+caminho='/home/joao/qualy/base/ana/'
+caminho_out='/home/joao/qualy/base/ana_mono/'
+D = dir('/home/joao/qualy/base/ana/*.wav');
+
+Temp = size(D);
+Dtotal = Temp(1);
+
+
+for J = 1 : Dtotal  
+    ArquivoBase = [ caminho D(J).name  ]
+    [y,fs] = wavread(ArquivoBase);
+    ArquivoBaseSaida = [ caminho_out D(J).name  ]
+    wavwrite(y(:,1), fs, ArquivoBaseSaida);
+end
