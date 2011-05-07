@@ -5,7 +5,7 @@ N=512;
 Fs=22050;
 f0_norm = 120;
 
-caminho='./percepcao/'
+caminho='../base/mau_mono/'
 %filename = dir([caminho '*.wav']);
 filename = dir([caminho '*.wav']);
 

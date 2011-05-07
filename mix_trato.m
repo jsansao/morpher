@@ -4,7 +4,7 @@ M=22
 N=512;
 Fs=22050;
 
-caminho='/home/joao/20101/anacristina/percepcao/'
+caminho='../base/mau_mono/'
 %filename = dir([caminho '*.wav']);
 filename = dir([caminho '*.wav']);
 
